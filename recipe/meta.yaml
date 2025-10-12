@@ -1,6 +1,6 @@
 {% set name = "comtypes" %}
-{% set version = "1.4.11" %}
-{% set sha256 = "da23dd727f5483ed29977b0e874571012f881587947f9cb430fabff6a138bcd0" %}
+{% set version = "1.4.13" %}
+{% set sha256 = "8a1ddadece26cd26f1807dbda4544da8ae7bdd306f796686e24afb304557f7b9" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [not win]
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
